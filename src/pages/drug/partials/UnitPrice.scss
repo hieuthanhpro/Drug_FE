@@ -1,0 +1,97 @@
+.unit-price {
+  h2 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    line-height: 1.4;
+    &.title-exchange {
+      margin-top: 2rem;
+    }
+  }
+  .unit-exchange {
+    margin-top: 1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 8.8rem;
+    &__tab {
+      display: flex;
+      flex-direction: column;
+      width: 25rem;
+      flex-shrink: 0;
+      ul {
+        li {
+          display: flex;
+          height: 4rem;
+          line-height: 4rem;
+          padding: 0 0.8rem;
+          border-right: 3px solid transparent;
+          position: relative;
+          padding-right: 3.2rem;
+          color: var(--text-extra-color);
+          cursor: pointer;
+          user-select: none;
+          span {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 1.4rem;
+          }
+          button {
+            flex-shrink: 0;
+            position: absolute;
+            right: 0;
+            width: 3.2rem;
+            height: 100%;
+            &:hover:not(:disabled),
+            &:focus:not(:disabled),
+            &:active:not(:disabled) {
+              box-shadow: none;
+              background: transparent;
+            }
+            svg {
+              color: var(--error-color);
+              fill: var(--error-color);
+            }
+          }
+          &.active {
+            background: var(--primary-color-10);
+            border-right-color: var(--primary-color);
+            color: var(--primary-extra-color);
+          }
+          &:hover:not(.active) {
+            background: var(--extra-color-5);
+            color: var(--primary-extra-color);
+          }
+          &.is-error {
+            background: rgba(var(--error-color-rgb), 0.1);
+          }
+        }
+      }
+    }
+    &__form {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 2.8rem 8.8rem;
+      flex-wrap: wrap;
+    }
+    &__item {
+      margin-bottom: 3rem;
+      display: none;
+      h3 {
+        text-transform: uppercase;
+        color: var(--primary-color);
+        font-weight: 700;
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+      }
+      &.active {
+        display: block;
+      }
+    }
+  }
+}

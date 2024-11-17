@@ -1,0 +1,51 @@
+// Tính năng trang Quản trị hệ thống
+const ADMIN_STORE_LIST = "admin_store_list";
+const ADMIN_STORE_COPY_DRUG = "admin_store_copy_drug";
+const ADMIN_STORE_ADD = "admin_store_add";
+const ADMIN_STORE_EDIT = "admin_store_edit";
+const ADMIN_STORE_LOCK = "admin_store_lock";
+const ADMIN_STORE_DELETE = "admin_store_delete";
+
+export const PERMISSION_ADMIN_STORE = {
+  ADMIN_STORE_LIST: ADMIN_STORE_LIST,
+  ADMIN_STORE_COPY_DRUG: ADMIN_STORE_COPY_DRUG,
+  ADMIN_STORE_ADD: ADMIN_STORE_ADD,
+  ADMIN_STORE_EDIT: ADMIN_STORE_EDIT,
+  ADMIN_STORE_LOCK: ADMIN_STORE_LOCK,
+  ADMIN_STORE_DELETE: ADMIN_STORE_DELETE,
+};
+
+const ADMIN_USER_LIST = "admin_user_list";
+const ADMIN_USER_ADD = "admin_user_add";
+const ADMIN_USER_EDIT = "admin_user_edit";
+const ADMIN_USER_DELETE = "admin_user_delete";
+
+export const PERMISSION_ADMIN_USER = {
+  ADMIN_USER_LIST: ADMIN_USER_LIST,
+  ADMIN_USER_ADD: ADMIN_USER_ADD,
+  ADMIN_USER_EDIT: ADMIN_USER_EDIT,
+  ADMIN_USER_DELETE: ADMIN_USER_DELETE,
+};
+
+const ADMIN_DRUG_DQG_LIST = "admin_drug_dqg_list";
+const ADMIN_DRUG_DQG_ADD = "admin_drug_dqg_add";
+const ADMIN_DRUG_DQG_EDIT = "admin_drug_dqg_edit";
+
+export const PERMISSION_ADMIN_DRUG_DQG = {
+  ADMIN_DRUG_DQG_LIST: ADMIN_DRUG_DQG_LIST,
+  ADMIN_DRUG_DQG_ADD: ADMIN_DRUG_DQG_ADD,
+  ADMIN_DRUG_DQG_EDIT: ADMIN_DRUG_DQG_EDIT,
+};
+
+const ADMIN_UNIT_LIST = "admin_unit_list";
+const ADMIN_UNIT_ADD = "admin_unit_add";
+const ADMIN_UNIT_EDIT = "admin_unit_edit";
+export const ADMIN_UNIT = [ADMIN_UNIT_LIST, ADMIN_UNIT_ADD, ADMIN_UNIT_EDIT];
+
+export const PERMISSION_ADMIN_UNIT = {
+  ADMIN_UNIT_LIST: ADMIN_UNIT_LIST,
+  ADMIN_UNIT_ADD: ADMIN_UNIT_ADD,
+  ADMIN_UNIT_EDIT: ADMIN_UNIT_EDIT,
+};
+
+export const PERMISSION_ADMIN = { ...PERMISSION_ADMIN_STORE, ...PERMISSION_ADMIN_USER, ...PERMISSION_ADMIN_DRUG_DQG, ...PERMISSION_ADMIN_UNIT };

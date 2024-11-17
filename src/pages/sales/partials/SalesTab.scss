@@ -1,0 +1,52 @@
+.sales-create-tab {
+  background: var(--primary-color);
+  padding: 0.8rem 2rem 0;
+  height: 5.3rem;
+  ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    li {
+      position: relative;
+      white-space: nowrap;
+      span {
+        border-radius: 0.5rem 0.5rem 0 0;
+        background: var(--white-color);
+        font-size: 1.6rem;
+        cursor: pointer;
+        color: var(--primary-color);
+        padding: 0.8rem 5.2rem 0.8rem 2rem;
+        line-height: 2.4rem;
+        gap: 0.8rem;
+        height: 4rem;
+        transition: all 0.2s ease-in-out;
+        display: block;
+      }
+      button {
+        border: none;
+        position: absolute;
+        right: 2rem;
+        top: 0.8rem;
+      }
+
+      &.active {
+        span {
+          height: 4.5rem;
+        }
+      }
+    }
+  }
+  .add-tab-invoice {
+    border: none;
+    width: 3.2rem;
+    margin-left: 0.8rem;
+    svg {
+      fill: var(--white-color);
+      color: var(--white-color);
+    }
+    &:hover:not(:disabled):not([disabled]),
+    &:focus:not(:disabled):not([disabled]) {
+      background: inherit;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.modal-drug-group-detail {
+  .modal-dialog {
+    max-width: 110rem;
+    max-height: calc(100vh - 6rem);
+  }
+  .modal-body {
+    padding: 0;
+  }
+  .modal-content {
+    max-height: calc(100vh - 6rem);
+  }
+  .modal-body {
+    max-height: calc(100vh - 12rem);
+    overflow: auto;
+  }
+  .search-actions-warpper{
+    padding: 1.6rem 1.6rem 0;
+    display: flex;
+    gap: 1.6rem;
+    justify-content: space-between;
+    .btn-export{
+      flex-shrink: 0;
+    }
+  }
+  .search-container {
+    padding: 0;
+    width: 100%;
+  }
+  .box-table {
+    margin-top: 1.6rem;
+    &__wrapper {
+      max-height: calc(100vh - 26.2rem);
+      @media (max-width: 767px) {
+        max-height: calc(100vh - 29.2rem);
+      }
+    }
+  }
+  .pagination {
+    padding: 1.6rem;
+  }
+}

@@ -1,0 +1,51 @@
+.modal-drug-sale {
+  .modal-dialog {
+    max-width: 76rem;
+  }
+  .modal-body {
+    padding: 0;
+  }
+  .search-container {
+    padding: 1.6rem;
+  }
+  .drug-modal-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.2rem 1.6rem;
+    gap: 2rem;
+    cursor: pointer;
+    user-select: none;
+    &:hover{
+      background: var(--primary-color-10);
+    }
+    &__image {
+      flex-shrink: 0;
+    }
+    &__info {
+      font-size: 1.4rem;
+      width: 100%;
+      .block-header {
+        margin-bottom: 1.6rem;
+      }
+      .title {
+        span {
+          font-weight: 700;
+        }
+      }
+      .price {
+        span {
+          font-weight: 700;
+          color: var(--primary-color);
+        }
+      }
+      ul {
+        gap: 0 2.4rem;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .list-drug{
+    max-height: calc(100vh - 19.2rem);
+    overflow: auto;
+  }
+}

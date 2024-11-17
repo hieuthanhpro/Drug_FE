@@ -1,0 +1,62 @@
+.modal-drug-detail {
+  .modal-dialog {
+    max-width: 110rem;
+  }
+  .box-table{
+    margin-top: .8rem;
+  }
+  .drug-detail-info {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    .item {
+      width: 33.33333333%;
+      flex-shrink: 0;
+      padding-right: .8rem;
+      &-break {
+        width: 100%;
+        border-bottom: 1px solid var(--border-color);
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+    #group, #packageForm{
+      width: 66.66666667%;
+    }
+    #substances{
+      width: 100%;
+    }
+  }
+  .qrcode-barcode {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    .item{
+      max-width: calc(66.66666667% - 1rem);
+      &:first{
+        max-width: calc(33.33333333% - 1rem);
+      }
+    }
+    svg{
+      margin-top: 0.6rem;
+      max-width: 100%;
+      height: auto !important;
+    }
+    canvas{
+      max-width: 100%;
+      height: auto !important;
+    }
+  }
+  @media(max-width: 767px){
+    .drug-detail-info{
+      .item{
+        width: 100% !important;
+        &-break{
+          display: none;
+        }
+      }
+    }
+  }
+}

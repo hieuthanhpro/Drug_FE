@@ -1,0 +1,39 @@
+.modal-drug {
+  .modal-dialog {
+    max-width: 96rem;
+  }
+  .modal-body {
+    padding-top: 0.4rem;
+  }
+  .tab-content {
+    padding-bottom: 0;
+  }
+  .option-master-monopoly {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    .base-checkbox {
+      margin-top: 0;
+    }
+  }
+  .list-form-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem 8.8rem;
+    flex-wrap: wrap;
+    .form-group {
+      width: 25rem;
+      margin: 0;
+      flex-shrink: 0;
+    }
+  }
+  .note {
+    font-size: 1.4rem;
+    margin: 0;
+    font-style: italic;
+    .required {
+      color: var(--error-color);
+    }
+  }
+}

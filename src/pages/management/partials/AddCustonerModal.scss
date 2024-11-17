@@ -1,0 +1,33 @@
+.modal-add-customer{
+  .modal-dialog {
+    max-width: 96rem;
+  }
+  .list-form-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem 8.8rem;
+    flex-wrap: wrap;
+    .form-group {
+      width: 25rem;
+      margin: 0;
+      flex-shrink: 0;
+    }
+    #FieldAddress{
+      width: 58.8rem;
+    }
+    &.is-company{
+      #FieldName{
+        width: 100%;
+      }
+    }
+  }
+  .radio-list{
+    .form-group{
+      display: flex;
+      gap: 1.2rem;
+      .base-radio{
+        margin: 0;
+      }
+    }
+  }
+}

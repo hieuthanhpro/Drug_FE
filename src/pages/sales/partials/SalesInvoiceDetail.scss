@@ -1,0 +1,85 @@
+.sales-detail {
+  &__header {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    h4 {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      color: var(--primary-color);
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+    &__logo {
+      margin-right: 1.6rem;
+      svg {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+    &__name {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__body {
+    font-size: 1.4rem;
+    .title {
+      text-transform: uppercase;
+      font-size: 2.6rem;
+      color: var(--primary-color);
+      text-align: center;
+      font-weight: 700;
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+    }
+
+    .invoice-info {
+      margin-bottom: 1.5rem;
+    }
+
+    .value {
+      font-weight: 600;
+      margin-left: 0.5rem;
+    }
+
+    &__item {
+      margin-top: 2rem;
+      h4 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--primary-color);
+      }
+
+      &__content {
+        border: 0.1rem solid var(--border-color);
+        border-radius: 0.4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        .line-text {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.8rem 1rem;
+          
+          &:not(:last-child) {
+            border-bottom: 0.1rem solid var(--border-color);
+
+          }
+        }
+        .line-value {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.modal-invoice-detail-footer {
+  .modal-footer__actions {
+    justify-content: flex-end;
+  }
+}

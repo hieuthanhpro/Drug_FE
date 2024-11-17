@@ -1,0 +1,28 @@
+.base-bulk-action {
+  background: var(--primary-color-5);
+  font-weight: 400;
+  left: 0;
+  padding: 1rem 2.4rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  ul {
+    .select-count {
+      font-size: 1.4rem;
+      line-height: 2rem;
+      letter-spacing: 0.25px;
+      color: var(--text-primary-color);
+      padding-left: 4rem;
+      margin-right: 2rem;
+      span {
+        color: var(--primary-color);
+      }
+    }
+  }
+  &__button {
+    .base-button {
+      padding: 0.6rem 0.4rem 0.6rem 1.2rem;
+    }
+  }
+}

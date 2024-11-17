@@ -1,0 +1,97 @@
+.navigation {
+  li {
+    & > a {
+      padding: 1.6rem 3.2rem 1.6rem 1.6rem;
+      gap: 1.2rem;
+      color: var(--white-color);
+      text-decoration: none;
+      transition: all 0.5s ease-in-out;
+      cursor: pointer;
+      font-size: 1.6rem;
+      position: relative;
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: var(--white-color);
+        color: var(--white-color);
+        transition: all 0.5s ease-in-out;
+        flex-shrink: 0;
+      }
+      span {
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover {
+        background: #242e53;
+      }
+      .arrow-menu {
+        position: absolute;
+        right: 1.2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+    &.show-children {
+      background: var(--menu-background-children-color);
+      & > a {
+        background: #242e53;
+      }
+    }
+    &.active {
+      & > a {
+        background: var(--menu-active-color);
+        color: var(--white-color);
+        svg {
+          fill: var(--white-color);
+          color: var(--white-color);
+        }
+      }
+    }
+    &.disabled {
+      cursor: not-allowed;
+      user-select: none;
+      & > a {
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+  }
+  ul {
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+
+    .level-3 {
+      margin-top: 0 !important;
+      a {
+        padding-left: 8rem;
+        font-size: 1.2rem;
+      }
+    }
+
+    li {
+      a {
+        padding: 0.8rem 1.2rem 0.8rem 5.2rem;
+        font-size: 1.4rem;
+        &:hover {
+          background: none;
+        }
+      }
+      &.active {
+        & > a {
+          background: transparent;
+          color: var(--menu-active-children-color);
+          pointer-events: none;
+        }
+      }
+      &:first-child {
+        margin-top: 1rem;
+      }
+      &:last-child {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
